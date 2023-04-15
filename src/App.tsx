@@ -76,6 +76,7 @@ const Wrapper = styled.main`
   background-color: #000000;
   background-image: url(${background});
   background-size: contain;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
   background-repeat: repeat;
   display: flex;
   flex-direction: row;
@@ -100,7 +101,7 @@ const Hero = styled.section`
   max-width: 800px;
   position: relative;
   border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
-  box-shadow: 15px 15px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px rgba(0, 0, 0, 1);
   padding: 15px 30px;
   display: flex;
   flex-direction: row;
@@ -129,7 +130,9 @@ const RightPanel = styled.article`
 `;
 
 const HeroImg = styled.img`
+  box-shadow: 5px 5px rgba(0, 0, 0, 1);
   width: 100%;
+  margin: 0 0 10px;
 `;
 
 const ImageLink = styled.a``;
@@ -176,12 +179,13 @@ const Link = styled.a`
   background-image: linear-gradient(to left, #ba34bd, #10b6ac);
   padding: 10px 15px;
   border-radius: 10px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 1);
   margin: 0;
   font-family: "Lobster Two", cursive;
   font-size: 1.5em;
   color: #ffffff;
   text-decoration: none;
-  margin: 0.5em auto;
+  margin: -0.25em auto 1em;
   display: block;
   text-align: center;
   transition: all 150ms;
